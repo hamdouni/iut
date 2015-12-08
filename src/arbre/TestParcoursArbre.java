@@ -1,5 +1,6 @@
-import java.util.* ;
+package arbre;
 
+import java.util.* ;
 
 /**
  * @author Brahim HAMDOUNI (http://brahim.hamdouni.com)
@@ -16,6 +17,7 @@ import java.util.* ;
  * [3] [6] [7]
  *
  */
+
 public class TestParcoursArbre {
 
 	public static void main(String[] args) {
@@ -42,6 +44,7 @@ public class TestParcoursArbre {
 			//if (current.col == 1) System.out.println(T[current.idx][0]);	// c'est la première colonne de notre noeud, 
 											// donc c'est la 1ere fois qu'on passe sur ce noeud, 
 											// on affiche sa valeur
+
 			System.out.println(T[current.idx][0]);				// version L. Finta
 
 			idxFils = T[current.idx][current.col]; 				// on regarde l'index du noeud fils en cours
@@ -49,13 +52,9 @@ public class TestParcoursArbre {
 				if(current.col < 3) {					 					
 					current.col ++;					// on prépare le prochain traitement à la colonne suivante
 					pile.push(current);				// (sauf si on est deja à la dernière)
-
 				}
 				pile.push(new Info(idxFils,1));
 			}
 		}
-
-
-	}
-	
+	}	
 }
