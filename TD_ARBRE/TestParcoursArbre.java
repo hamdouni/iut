@@ -8,6 +8,13 @@ import java.util.* ;
  * col 0 : valeur stocké
  * col 1 à 3 : index des fils (maximum 3), -1 dans la colonne si pas de fils
  *
+ * Exemple
+ *       [5]
+ *     /  |  \
+ *   [9] [8] [4]
+ *   / \   \ 
+ * [3] [6] [7]
+ *
  */
 public class TestParcoursArbre {
 
