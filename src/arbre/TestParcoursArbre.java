@@ -4,7 +4,9 @@ import java.util.* ;
 
 /**
  * @author Brahim HAMDOUNI (http://brahim.hamdouni.com)
- * Parcours en profondeur d'un arbre implémenté sous forme de tableau de 4 colonnes
+ * Parcours en profondeur d'un arbre implémenté sous forme de tableau de 4 colonnes.
+ * Version itérative.
+ * 
  * Tableau à 2 dimensions, ligne 0 correspond à la racine
  * col 0 : valeur stocké
  * col 1 à 3 : index des fils (maximum 3), -1 dans la colonne si pas de fils
@@ -40,10 +42,6 @@ public class TestParcoursArbre {
 
 		while (! pile.empty()) {
 			current = pile.pop();
-
-			//if (current.col == 1) System.out.println(T[current.idx][0]);	// c'est la première colonne de notre noeud, 
-											// donc c'est la 1ere fois qu'on passe sur ce noeud, 
-											// on affiche sa valeur
 
 			System.out.println(T[current.idx][0]);				// version L. Finta
 
