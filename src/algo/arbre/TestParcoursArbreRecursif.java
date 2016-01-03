@@ -1,4 +1,4 @@
-package arbre;
+package algo.arbre;
 
 /**
  * @author Brahim HAMDOUNI (http://brahim.hamdouni.com)

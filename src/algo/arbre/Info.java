@@ -1,4 +1,4 @@
-package arbre;
+package algo.arbre;
 
 public class Info {
 	public int idx, col;

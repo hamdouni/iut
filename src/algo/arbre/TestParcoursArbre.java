@@ -1,4 +1,4 @@
-package arbre;
+package algo.arbre;
 
 import java.util.* ;
 
